@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="coverlet.collector" Version="3.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Newshore.Journeys.Application\Newshore.Journeys.Application.csproj" />
+    <ProjectReference Include="..\Newshore.Journeys.Domain\Newshore.Journeys.Domain.csproj" />
+    <ProjectReference Include="..\Newshore.Journeys.Infrastructure\Newshore.Journeys.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
